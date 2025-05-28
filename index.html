@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculadora">
+        <h1 class="titulo">Calculadora</h1>
+        
+        <input type="text" class="pantalla" id="pantalla" readonly>
+        
+        <div class="botones">
+            <button class="btn btn-clear" onclick="limpiar()">C</button>
+            <button class="btn btn-clear" onclick="borrar()">←</button>
+            <button class="btn btn-operador" onclick="agregar('/')">/</button>
+            <button class="btn btn-operador" onclick="agregar('*')">×</button>
+            
+            <button class="btn btn-numero" onclick="agregar('7')">7</button>
+            <button class="btn btn-numero" onclick="agregar('8')">8</button>
+            <button class="btn btn-numero" onclick="agregar('9')">9</button>
+            <button class="btn btn-operador" onclick="agregar('-')">-</button>
+            
+            <button class="btn btn-numero" onclick="agregar('4')">4</button>
+            <button class="btn btn-numero" onclick="agregar('5')">5</button>
+            <button class="btn btn-numero" onclick="agregar('6')">6</button>
+            <button class="btn btn-operador" onclick="agregar('+')">+</button>
+            
+            <button class="btn btn-numero" onclick="agregar('1')">1</button>
+            <button class="btn btn-numero" onclick="agregar('2')">2</button>
+            <button class="btn btn-numero" onclick="agregar('3')">3</button>
+            <button class="btn btn-igual" onclick="calcular()" rowspan="2">=</button>
+            
+            <button class="btn btn-numero btn-cero" onclick="agregar('0')">0</button>
+            <button class="btn btn-numero" onclick="agregar('.')">.</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
